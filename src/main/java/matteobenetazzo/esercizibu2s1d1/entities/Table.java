@@ -5,17 +5,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.util.List;
-
 @Getter
 @Setter
 @ToString
 @AllArgsConstructor
-public class Pizza implements MenuItem {
-    private String name;
-    private int calories;
-    private double price;
-
-    private List<Topping> toppings;
+public class Table {
+    private int number;
+    private int maxCovers;
+    private TableStatus status;
 }
-
